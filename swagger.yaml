@@ -1,0 +1,36 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "Swagger Petstore"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "apiteam@swagger.io"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "petstore.swagger.io"
+basePath: "/services/default/enportal-api"
+schemes:
+- "https"
+- "http"
+paths:
+  /me:
+    get:
+      tags:
+      - "pet"
+      summary: "GET ME"
+      description: ""
+      operationId: "getMe"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "OK"
+
+
+  
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"
